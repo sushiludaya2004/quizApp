@@ -104,3 +104,40 @@ By completing this sprint, the app now:
 - Calculates and displays the **final score**  
 - Allows users to **restart the quiz**  
 
+# ✅ Sprint 2 – Enhanced Quiz Features
+
+## ⏱ Timer per Question
+- Implemented a **countdown timer** for each question  
+- Timer automatically moves to the **next question** when it reaches 0  
+- Added a **visual timer bar** showing remaining time
+
+## 💻 Code Question Support
+- Updated `quizQuestions` data to include:
+  - `type` (text or code)  
+  - `code` fields for code snippets  
+- `QuizLayout` conditionally renders **code snippets** for code-type questions  
+- **Multiple-choice questions** remain fully functional
+
+## 🎨 UX Improvements
+- Highlighted **selected options** for better visual feedback  
+- **Next button** disables until an option is selected  
+- **Final score** is displayed immediately after the quiz ends  
+- **Restart button** resets quiz and timer properly
+
+## 🖌 Styling & Layout
+- Applied **Tailwind CSS** for clean card layout, buttons, spacing, and timer  
+- Timer bar and option buttons include **smooth transitions** and **hover effects**
+
+## ⚙️ State Management
+- Managed **question index, selected option, score, user answers, and timer** using `useState` and `useEffect`  
+- Timer resets correctly on **question change**  
+- Score calculation logic remains fully functional for **multiple-choice questions**
+
+## 💡 End of Sprint 2
+By completing this sprint, the app now:
+
+- Includes a **timer for each question**  
+- Supports **code-based questions**  
+- Offers **better visual feedback and UX improvements**  
+- Maintains full **score tracking and restart functionality**  
+- Looks clean and interactive thanks to **Tailwind styling**
